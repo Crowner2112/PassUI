@@ -11,10 +11,12 @@
 <style>
 body {
     margin: 0;
+    padding: 0;
     font-family: "Helvetica", "PingFang SC", "Microsoft YaHei", sans-serif;
     background: linear-gradient(180deg, #2a3147, #151c2d);
     text-align: center;
     color: white;
+    height: -webkit-fill-available;
 }
 
 .header {
@@ -32,6 +34,8 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.25);
     overflow: hidden;
     position: relative;
+    min-height: calc(100vh + env(safe-area-inset-bottom));
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .card-top {
